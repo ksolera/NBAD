@@ -1,0 +1,81 @@
+<%- include('../partials/header.ejs')%>
+
+<table class="table">
+    <h4> <%= user.firstName %> <%= user.lastName %>'s Connections</h4>
+    <thead>
+        <tr>
+            <th>Connection</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% if(connections.length){ %>
+            <% connections.forEach(connection => { %>
+                <tr>
+                    <td>
+                        <a href="/connections/<%= connection.id %>" class="connection-name"><%= connection.Name %></a>
+                    </td>
+                    
+                    <td>
+                        <form action="/connections/<%= connection.id %>/edit" method="get">
+                            <button type="submit" class="btn btn-primary">Update</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/connections/<%= connection.id %>?_method=DELETE" method="post">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            <% }); %>
+        <% } else { %>
+            <tr>
+                <td colspan="3">No connections</td>
+            </tr>
+        <% } %>
+    </tbody>
+</table>
+
+<table class="table">
+    <h4> <%= user.firstName %> <%= user.lastName %>'s RSVP's</h4>
+    <thead>
+        <tr>
+            <th>Connection</th>
+            <th>RSVP Status</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% if(rsvps.length){ %>
+            <% rsvps.forEach(rsvp => { %>
+                <tr>
+                    <td>
+                        <%= rsvp.connection.Name %>
+                    </td>
+                    <td>
+                        <%= rsvp.rsvp %>
+                    </td>
+                    
+                    <td>
+                        <form action="/connections/<%= rsvp.connection.id %>/" method="get">
+                            <button type="submit" class="btn btn-primary">Update</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/connections/<%= rsvp.connection.id %>/rsvp?_method=DELETE" method="post">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            <% }); %>
+        <% } else { %>
+            <tr>
+                <td colspan="3">No RSVP's</td>
+            </tr>
+        <% } %>
+    </tbody>
+</table>
+
+</body>

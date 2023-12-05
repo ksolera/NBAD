@@ -1,0 +1,21 @@
+<%- include('../partials/header.ejs') %>
+<div class="container">
+<ul class="category-grid">
+  <%categories.forEach(category => { %>
+    <div class="category-box">
+      <!-- <div class="col-md-3"> -->
+            
+            <h4><%= category %></h4>
+            
+              <%connections.forEach(connection => { 
+                if (connection.Topic ===  category){ %>
+                  <li>&nbsp<a href="/connections/<%= connection.id %> "><%= connection.Name %></a>
+                  <% } %>
+        <% }); %>
+        </li>   
+    <!-- </div> -->
+  </div>
+  <% }); %>
+  </ul>
+</div>
+<%- include('../partials/footer.ejs') %>

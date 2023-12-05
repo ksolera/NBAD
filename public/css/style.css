@@ -1,0 +1,454 @@
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+  }
+  
+  .error-content {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .error-title {
+    font-size: 32px;
+    color: #ff5252;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .error-message {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    overflow: hidden;
+  }
+  
+  .contact-content {
+    text-align: center;
+    max-width: 600px;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  /* Rest of the CSS styles remain the same */
+  
+  .contact-heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-description {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .team-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .team-heading {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .team-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .team-member {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .team-member-name {
+    font-weight: bold;
+  }
+  
+  .team-member-email {
+    color: #007bff;
+  }
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+  }
+  
+  .about-content {
+    text-align: center;
+    max-width: 600px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .team-heading {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .team-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .team-member {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .team-member:before {
+    content: "•";
+    margin-right: 5px;
+    color: #007bff;
+  }
+body{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    
+}
+#navigation{
+    background-color: rgb(31, 35, 31);
+    color:  rgb(62, 157, 34);
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+#buttons{
+    text-align: center;
+    padding: 15px;
+    width: 450px;
+}
+#navigation a{
+    text-decoration: none;
+    color: white;
+}
+#buttons *{
+    margin-right: 8px;
+}
+#content { 
+    background-color: rgb(62, 157, 34);
+    padding: 18px;
+}
+#content a{
+    text-decoration: none;
+    color: white;
+}
+img{
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+}
+#content1
+{
+    padding-left: 20px;
+    padding-top: 55px;
+    padding-inline-end: 65px;
+}
+#content1 h3 
+{
+    text-align: center;
+}
+#content2
+{
+    padding-left: 50px;
+    padding-top: 55px;
+    padding-inline-end: 65px;
+    font-family: cursive;
+    text-align: center;
+}
+
+input{
+    
+    margin-left: 105px;
+    width: 700px;
+    border-radius: 4px;
+    height: 25px;
+}
+label{
+    height: 48.3px;
+    width: 30.8px;
+    display: inline-block;
+    text-align: right;
+
+}
+.inpblock{
+    margin-inline-start: 50px;
+    
+}
+.inp{
+    display: inline-block;
+    text-align: right;
+    font-style: bold;
+}
+input[type="File"]{
+    border: none;
+}
+input{
+    border: groove;
+}
+
+#submit{
+    background-color: rgb(62, 157, 34);
+    color: white;
+    border-radius: 8px ;
+    height: 40.3px;
+    width: 800.8px;
+    margin-left: 105px;
+    margin-bottom: 50px;
+}
+#log-in{
+    background-color: rgb(42, 40, 40);
+    color:  rgb(53, 143, 26);
+    border-radius: 5px ;
+    height: 35px;
+    width: 80px;
+    border-color:rgb(53, 143, 26);
+    border: solid;
+    cursor: pointer;
+    
+}
+
+#log-in:active{
+    transform: scale(0.95);
+}
+#log-in:hover{
+    background-color: rgb(48, 93, 34);
+    border: none;
+    color: aliceblue;
+}
+#sign-up{
+    background-color: rgb(62, 157, 34);
+    color: white;
+    border-radius: 5px ;
+    height: 35px;
+    width: 88px;
+    border:none;
+    cursor: pointer;
+}
+#sign-up:active{
+    transform: scale(0.95);
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+#new_connection{
+    color: white;
+}
+.Footer{
+    color: rgb(53, 143, 26);
+}
+.index{
+    background-color: rgb(42, 40, 40);
+    color:  rgb(53, 143, 26);
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+}
+footer{
+    background-color: rgb(42, 40, 40);
+    color:  rgb(53, 143, 26);
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+}
+#content3{
+    padding: 100px 50px;
+}
+.img_content3{
+    width: 200px;
+    height: 110px;
+    margin-top: 50px;
+    margin-left: 65px;
+}
+.content3{
+    padding: 20px;
+}
+.col-md-3{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px ;
+    border: 20px;
+}
+h4{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+#fitness{
+    margin-left: 170px;
+    margin-right: 170px;
+}
+.card-img-top{
+    height: 370px;
+}
+.card{
+    margin-top: 100px;
+    margin: auto;
+    /* margin-inline-start: 250px; */
+    /* margin-bottom: 50px; */
+}
+.card-body{
+    text-align: center;
+    margin-bottom: 35px;
+}
+#card-button{
+    text-align: right;
+}
+#logostyle 
+{
+    width: 100px;
+    height: 70px;
+}
+
+.container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  
+  .category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  
+  .category-box {
+    background-color: rgb(122, 186, 99);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 220px;
+  }
+  
+  .category-box h4 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .category-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    padding-left: 20px; /* Adjust the value as needed */
+    text-align: center;
+  }
+  
+  .category-box li {
+    margin-bottom: 5px;
+    text-indent: -15px; /* Add this line */
+  }
+  
+  .category-box a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .category-box a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .message {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .success {
+    background: #28a745;
+    color: #fff;
+  }
+  
+  .error {
+    background: #dc3545;
+    color: #fff;
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: rgb(122, 186, 99);
+    color: white;
+}
+
+.connection-name {
+    font-weight: bold;
+    color: #333; /* Change the color to your preference */
+}
+
+.btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}

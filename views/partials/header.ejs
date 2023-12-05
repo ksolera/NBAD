@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>SK's Connections Club</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+  </head>
+  <body>
+    <div id="navigation">
+      <a href="/">
+        <img id="logostyle" src="/images/logo.jpeg" alt="logo"
+      /></a>
+      <div id="buttons">
+        <a id="new_connection" href="/connections/new">Start a New Connection</a>
+        <%if(!user){%>
+          <div class="vr"></div>
+          <button id="log-in"><a href="/users/login">Login</a></button>
+          <div class="vr"></div>
+          <button id="sign-up"><a href="/users/new">Sign Up</a></button>
+        <%}%>
+        <%if(user){%>
+          <div class="vr"></div>
+          <button id="log-in"><a href="/users/profile">Profile</a></button>
+          <div class="vr"></div>
+          <button id="sign-up"><a href="/users/logout">Logout</a></button>
+        <%}%>
+      </div>
+    </div>
+    <div id="content">
+        <a href="/">Home</a>
+        <a href="/connections">Connections</a>
+      </div>
+  </body>
+  <% if (errorMessages.length > 0) { %>
+    <% errorMessages.forEach(error => { %>
+        <div class ="error"><%= error %></div>
+    <% }); %>
+<% } %>
+
+<% if (successMessages.length > 0) { %>
+    <% successMessages.forEach(success => { %>
+        <div class ="success"><%= success %></div>
+    <% }); %>
+<% } %>

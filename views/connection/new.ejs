@@ -1,0 +1,49 @@
+<%- include('../partials/header.ejs') %>
+    <div id="content2">
+        <form action="/connections" method="POST">
+            <div class="container">
+            <h1>Create a new Connection</h1>
+            </div>
+            <br>
+            <div class="inp"> 
+            <label for="Name">Name</label>
+            <input class = "inpblock" type="text" id="Name" name="Name" placeholder=" Enter the topic of your connection" required></div>
+            <br><br>
+            <div class="inp">
+            <label for="Title">Topic</label>
+            <input class = "inpblock" type="text" id="Topic" name="Topic" placeholder=" Enter the title of your connection" required></div>
+            <br><br>
+            <div class="inp">
+            <label for="about">Details</label>
+            <input class = "inpblock" type="text" id="Details" name="Details" placeholder=" Enter the details of your connection" required minlength="10"></div>
+            <br><br>
+            <div class="inp">
+            <label for="Where">Location</label>
+            <input class = "inpblock" type="text" id="Location" name="Location" placeholder=" Enter the location of your connection" required></div>
+            <br><br>
+            <div class="inp">
+            <label for="When">Date</label>
+            <input class = "inpblock" type="date" id="Date" name="Date" placeholder=" Enter the date of your connection" required></div>
+            <br><br>
+            <div class="inp">
+            <label for="Start">Start</label>
+            <input class = "inpblock" type="time" id="Start" name="Start" placeholder=" Enter the start time of your connection" required></div>
+            <br><br>
+            <div class="inp">
+            <label for="End">End</label>
+            <input class = "inpblock" type="time" id="End" name="End" placeholder=" Enter the end time of your connection" required></div>
+            <br><br>
+            <div class="inp">
+                <label for="Image">Image</label>
+                <input class = "inpblock" type="text" id="Image" name="Image" placeholder=" Enter Image Url" required></div>
+                
+            <br><br>
+            <input  type="submit" id="submit" value="Create Connection">
+
+        </form>
+    </div>
+    <br>
+    <div>
+
+    </div>
+<%- include('../partials/footer.ejs') %>

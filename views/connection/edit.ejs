@@ -1,0 +1,53 @@
+<%- include('../partials/header.ejs') %>
+    <div id="content2">
+        <form method = "POST" action = "/connections/<%= connection.id %>?_method=PUT" >
+            <div class="container">
+            <h1>Update  Connection</h1>
+            </div>
+            <br>
+            <div class="inp"> 
+            <label for="Name">Name</label>
+            <input class = "inpblock" type="text" id="Name" name="Name" value="<%= connection.Name %>" required></div>
+            <br><br>
+            <div class="inp">
+            <label for="Title">Topic</label>
+            <input class = "inpblock" type="text" id="Topic" name="Topic" value="<%= connection.Topic %>" required></div>
+            <br><br>
+            <div class="inp">
+            <label for="Host">Host</label>
+            <input class = "inpblock" type="text" id="Host" name="Host" value ="<%= connection.Host %>" required></div>
+            <br><br>
+            <div class="inp">
+            <label for="Details">Details</label>
+            <input class = "inpblock" type="text" id="Details" name="Details" value ="<%= connection.Details %>" required  minlength="10"></div>
+            <br><br>
+            <div class="inp">
+            <label for="Where">Location</label>
+            <input class = "inpblock" type="text" id="Location" name="Location" value="<%= connection.Location %>" required></div>
+            <br><br>
+            <div class="inp">
+            <label for="When">Date</label>
+            <input class = "inpblock" type="date" id="Date" name="Date" value="<%= connection.Date %>" required></div>
+            <br><br>
+            <div class="inp">
+            <label for="Start">Start</label>
+            <input class = "inpblock" type="time" id="Start" name="Start" value="<%= connection.Start %>" required></div>
+            <br><br>
+            <div class="inp">
+            <label for="End">End</label>
+            <input class = "inpblock" type="time" id="End" name="End" value="<%= connection.End %>" required></div>
+            <br><br>
+            <div class="inp">
+                <label for="Image">Image</label>
+                <input class = "inpblock" type="text" id="Image" name="Image" value="<%= connection.Image %>" required></div>
+                
+            <br><br>
+            <input type="submit" id="submit" value="Update Connection">
+
+        </form>
+    </div>
+    <br>
+    <div>
+
+    </div>
+<%- include('../partials/footer.ejs') %>
